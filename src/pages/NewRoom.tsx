@@ -1,11 +1,14 @@
+import { useHistory } from 'react-router-dom'
 import illustrationImg from '../assets/images/illustration.svg';
 import logoImg from '../assets/images/logo.svg';
-import logoGoogle from '../assets/images/google-icon.svg';
 
 import '../styles/auth.scss';
 import { Button } from '../components/Button';
 
 export function NewRoom() {
+
+  const history = useHistory();
+
   return (
     <div id="page-auth">
       <aside>
